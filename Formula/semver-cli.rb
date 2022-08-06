@@ -5,20 +5,20 @@
 class SemverCli < Formula
   desc ""
   homepage ""
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stephenwilliams/semver-cli/releases/download/v0.3.0/semver-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "35fc8a74519db3c81722a983bff1ef442f13cfc585a82367bd28528574bbeda3"
+      url "https://github.com/stephenwilliams/semver-cli/releases/download/v0.3.1/semver-cli_0.3.1_darwin_arm64.tar.gz"
+      sha256 "b95bc714d7a78f43ab065d12d981ce75b38b493aa528067a33e25287d2cf0e07"
 
       def install
         bin.install "semver-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stephenwilliams/semver-cli/releases/download/v0.3.0/semver-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "7ec77491740a4510fb09151aa42d83e00c1a986b147323ea36d64e4b57ecdc20"
+      url "https://github.com/stephenwilliams/semver-cli/releases/download/v0.3.1/semver-cli_0.3.1_darwin_amd64.tar.gz"
+      sha256 "420db172714ff0f186f2d91aa345ea0c1709a81c00a372f1fc2e613698023dad"
 
       def install
         bin.install "semver-cli"
@@ -28,16 +28,16 @@ class SemverCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stephenwilliams/semver-cli/releases/download/v0.3.0/semver-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "4b2daa183c92c656299a7327c79542e809d7bfbe56ef91747bfca94b33280949"
+      url "https://github.com/stephenwilliams/semver-cli/releases/download/v0.3.1/semver-cli_0.3.1_linux_arm64.tar.gz"
+      sha256 "5debd81f05e1949b2262cd775d7d0f2d5c3b251a3197ea93c529aa2cce4b22b7"
 
       def install
         bin.install "semver-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stephenwilliams/semver-cli/releases/download/v0.3.0/semver-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "b26e362d87365b63bf4cf6beab638a07cc1b18346524e1f826cfaf77171697a7"
+      url "https://github.com/stephenwilliams/semver-cli/releases/download/v0.3.1/semver-cli_0.3.1_linux_amd64.tar.gz"
+      sha256 "6bc7d3721804523079865f92eeb9a3e931cc8b33b21270b27dcfbe271752ac22"
 
       def install
         bin.install "semver-cli"
