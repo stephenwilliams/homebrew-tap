@@ -3,7 +3,7 @@ cask "mcp-helper" do
   name "mcp-helper"
   desc "CLI tool for managing MCP (Model Context Protocol) server configurations"
   homepage "https://github.com/stephenwilliams/mcp-helper"
-  version "0.3.1"
+  version "0.3.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "mcp-helper" do
   on_macos do
     on_intel do
       url "https://github.com/stephenwilliams/mcp-helper/releases/download/v#{version}/mcp-helper_#{version}_darwin_amd64.tar.gz"
-      sha256 "52e5b24b9d2d625393816b95b5310701913541986eeaeaa725e94f4adf6f954a"
+      sha256 "15e9612714cf4f7655734231a4b467ba097e7595ef25c1643fdaace0ff8a4de8"
     end
     on_arm do
       url "https://github.com/stephenwilliams/mcp-helper/releases/download/v#{version}/mcp-helper_#{version}_darwin_arm64.tar.gz"
-      sha256 "89db7e71028b86f99ff99a51f3672119079b0e80ea0ef4e2db7c9070bff1c13b"
+      sha256 "6d1cb8658f01ca804903325dff4e009445034244b53d8df3b2e8ec8421fca98c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/stephenwilliams/mcp-helper/releases/download/v#{version}/mcp-helper_#{version}_linux_amd64.tar.gz"
-      sha256 "e891d7f3029d63c53bb3e49d0022743ed4ac2bb4a63dcdaa5f32b7fb76ae9ab7"
+      sha256 "6c64cfe8d5b5d3e85c024b7d8c3ab092e9d84a82c5f5ad5d3c3cff8486cabdd7"
     end
     on_arm do
       url "https://github.com/stephenwilliams/mcp-helper/releases/download/v#{version}/mcp-helper_#{version}_linux_arm64.tar.gz"
-      sha256 "02d7280f81a9bb9d0d2a3d6d0a00378a8f49acf8a1dd3546ca00808cd18e2448"
+      sha256 "56dfcb7a0bf742e6aefe1796039af0e3930740e6a9df6786666d0d3704c6c099"
     end
   end
 
